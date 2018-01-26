@@ -227,8 +227,9 @@ Isto indica que as lesões parecem ter incidências semelhantes em ambos os gên
 
 # Exceções e limitações do estudo
 
-Para uma comparação efetiva entre os métodos de diagnóstico, o ideal seria um estudo prospectivo randomizado, com casos balanceados.
-
+Este estudo não contemplou casos positivos e negativos, para o desafio a RM como método diagnóstico.
+Assim, não é possível determinar a sua sensibilidade, especificidade, acurácia e outros parâmtros relevantes.
+Para uma comparação efetiva entre os métodos de diagnóstico, o ideal seria um estudo prospectivo randomizado e controlado, com casos balanceados positivos e negativos para os diversos tipos de lesão.
 
 # Conclusões
 
