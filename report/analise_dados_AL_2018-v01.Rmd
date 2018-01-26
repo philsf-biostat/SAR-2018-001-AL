@@ -54,6 +54,11 @@ kable(history)
 
 ## Objetivos
 
+1. avaliar a associação entre os diagnósticos da RM e o Diagnóstico
+Artoscópico (Longitudinal, Vertical, Alça de Balde, Degenerativa);
+2. avaliar a relação entre a incidência no menisco acometido e a lesão associada (LCA);
+3. identificar a incidência destas lesões de acordo com o gênero do paciente.
+
 ## Recepção e tratamento dos dados
 
 # Metodologia
