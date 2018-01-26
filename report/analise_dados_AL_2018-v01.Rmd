@@ -53,6 +53,8 @@ source("scripts/input.R")
 
 # Lista de abreviaturas
 
+- RM - Ressonância magnética
+
 # Introdução
 
 ## Objetivos
@@ -92,6 +94,14 @@ print(CreateTableOne(c("RM", "da"), "loc", dados), exact = T)
 print(CreateTableOne(c("RM", "da"), "genero", dados), exact = T)
 
 ```
+
+Os diagnósticos pré e per operatórios tiveram suas incidências estratificadas por gênero dos pacientes levantados.
+
+De acordo com a RM, os diagnósticos mais frequentes nos 14 pacientes homens foram a lesão complexa e a lesão em alça balde, ambos ocorrendo em 4 pacientes (28.6%).
+A lesão vertical ocorreu em 2 homens (14.3%) e as lesões degenerativa, horizontal e flap ocorreram em 1 (7.1%) paciente, cada.
+Nas 7 mulheres, o diagnóstico mais frequente pela RM foi a lesão em alça de balde em 3 pacientes (42.9%) e a lesão longitudinal foi percebida em uma paciente (14.3%).
+Em cada um dos gêneros ocorreu um falso negativo, isto é, casos em que a RM não foi capaz de identificar nenhuma lesão.
+Não houve diferença significativa nas distribuições dos possíveis diagnósticos em relação aos gêneros (p-valor do teste exato de Fisher = 0.536).
 
 # Exceções e limitações do estudo
 
