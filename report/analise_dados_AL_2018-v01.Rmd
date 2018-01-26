@@ -125,17 +125,21 @@ O diagnóstico confirmatório por artroscopia identificou 9 lesões longitudinai
 |  lv   |  0|  1|  2|  0|  1|  0|  0|  0|
 |  sl   |  0|  0|  0|  0|  2|  0|  0|  0|
 
-Table: **Tabela xx** - Tabela de contingência dos diagnósticos obtidos por RM (linhas) e por Diagnóstico artroscópico (colunas);
+Table: **Tabela 2** - Tabela de contingência dos diagnósticos obtidos por RM (linhas) e por Diagnóstico artroscópico (colunas);
 DA = diagnóstico artroscópico,
 lc = lesão complexa,
 ld = lesão degenerativa,
 ab = lesão em alça de balde,
 lh = lesão horizontal,
-ll = lesão horizontal,
+ll = lesão longitudinal,
 lf = lesão tipo flap,
 lv = lesão vertical,
 sl = sem lesão.
 O p-valor corresponde ao teste exato de Fisher.
+
+A tabela 2 mostra as contagens pareadas em ambos os diagnósticos.
+A RM apresentou sucesso no diagnóstico de 5 lesões em alça de balde e uma lesão longitudinal.
+Apresentou erros de diagnóstico em um total de 13 classificadas erroneamente, e 2 lesões classificadas como ausentes (falso negativo). 
 
 Há diferença significativa entre os diagnósticos efetuados por ambos os métodos (Fisher: p-valor = 0.041).
 
