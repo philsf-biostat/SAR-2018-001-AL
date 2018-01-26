@@ -6,3 +6,6 @@ dados <- as.data.table(dados)
 
 # simplificar colnames
 names(dados)[5:7] <- c("loc", "da", "lca")
+
+# preencher lca
+dados[is.na(lca), ]$lca <- "não"
