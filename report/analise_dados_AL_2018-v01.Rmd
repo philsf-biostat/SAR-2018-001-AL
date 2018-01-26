@@ -106,26 +106,27 @@ O diagnóstico confirmatório por artroscopia identificou 9 lesões longitudinai
 ## Relação entre o diagnóstico por RM e artroscópico
 
 ```{r echo=FALSE}
-# levels(dados$RM) <- levels(dados$da) <- c("lc", "ld", "ab", "lh", "ll", "lf", "lv", "sl")
+# RM <- dados$RM
+# da <- dados$da
+# levels(RM) <- levels(da) <- c("lc", "ld", "ab", "lh", "ll", "lf", "lv", "sl")
+# kable(table(RM, da))
 # pander(print(CreateTableOne("RM", "da", dados), exact = T, printToggle = F))
 # source("scripts/input.R")
 ```
 
-|       |lc |ld       |ab       |lh |ll       |lf |lv        |sl |p     |
-|:------|:--|:--------|:--------|:--|:--------|:--|:---------|:--|:-----|
-|n      |0  |4        |7        |0  |9        |0  |1         |0  |      |
-|RM (%) |   |         |         |   |         |   |          |   |      |
-|       |-  |         |         |-  |         |-  |          |-  |0.041 |
-|lc     |-  |2 (50.0) |0 ( 0.0) |-  |2 (22.2) |-  |0 (  0.0) |-  |      |
-|ld     |-  |0 ( 0.0) |0 ( 0.0) |-  |0 ( 0.0) |-  |1 (100.0) |-  |      |
-|ab     |-  |0 ( 0.0) |5 (71.4) |-  |2 (22.2) |-  |0 (  0.0) |-  |      |
-|lh     |-  |1 (25.0) |0 ( 0.0) |-  |0 ( 0.0) |-  |0 (  0.0) |-  |      |
-|ll     |-  |0 ( 0.0) |0 ( 0.0) |-  |1 (11.1) |-  |0 (  0.0) |-  |      |
-|lf     |-  |0 ( 0.0) |0 ( 0.0) |-  |1 (11.1) |-  |0 (  0.0) |-  |      |
-|lv     |-  |1 (25.0) |2 (28.6) |-  |1 (11.1) |-  |0 (  0.0) |-  |      |
-|sl     |-  |0 ( 0.0) |0 ( 0.0) |-  |2 (22.2) |-  |0 (  0.0) |-  |      |
+|RM \\ DA| lc| ld| ab| lh| ll| lf| lv| sl|
+|:------:|--:|--:|--:|--:|--:|--:|--:|--:|
+|  lc   |  0|  2|  0|  0|  2|  0|  0|  0|
+|  ld   |  0|  0|  0|  0|  0|  0|  1|  0|
+|  ab   |  0|  0|  5|  0|  2|  0|  0|  0|
+|  lh   |  0|  1|  0|  0|  0|  0|  0|  0|
+|  ll   |  0|  0|  0|  0|  1|  0|  0|  0|
+|  lf   |  0|  0|  0|  0|  1|  0|  0|  0|
+|  lv   |  0|  1|  2|  0|  1|  0|  0|  0|
+|  sl   |  0|  0|  0|  0|  2|  0|  0|  0|
 
 Table: **Tabela xx** - Tabela de contingência dos diagnósticos obtidos por RM (linhas) e por Diagnóstico artroscópico (colunas);
+DA = diagnóstico artroscópico,
 lc = lesão complexa,
 ld = lesão degenerativa,
 ab = lesão em alça de balde,
