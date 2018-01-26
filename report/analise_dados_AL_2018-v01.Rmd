@@ -79,10 +79,37 @@ Esta análise foi realizada utilizando-se o software `R` versão `r getRversion(
 
 ## Análise descritiva
 
-```{r echo=FALSE}
+```{r include=FALSE}
 library(tableone)
 kable(print(CreateTableOne(c("idade", "genero", "RM", "loc", "da", "lca"),  data = dados), printToggle = F, showAllLevels = T, exact = T, noSpaces = T))
 ```
+
+|                  |level                  |Overall      |
+|:-----------------|:----------------------|:------------|
+|n                 |                       |21           |
+|idade (mean (sd)) |                       |29.05 (8.02) |
+|genero (%)        |f                      |7 (33.3)     |
+|                  |m                      |14 (66.7)    |
+|RM (%)            |lesão complexa         |4 (19.0)     |
+|                  |lesão degenerativa     |1 (4.8)      |
+|                  |lesão em alça de balde |7 (33.3)     |
+|                  |lesão horizontal       |1 (4.8)      |
+|                  |lesão longitudinal     |1 (4.8)      |
+|                  |lesão tipo flap        |1 (4.8)      |
+|                  |lesão vertical         |4 (19.0)     |
+|                  |normal                 |2 (9.5)      |
+|loc (%)           |lateral                |7 (33.3)     |
+|                  |medial                 |14 (66.7)    |
+|da (%)            |lesão complexa         |0 (0.0)      |
+|                  |lesão degenerativa     |4 (19.0)     |
+|                  |lesão em alça de balde |7 (33.3)     |
+|                  |lesão horizontal       |0 (0.0)      |
+|                  |lesão longitudinal     |9 (42.9)     |
+|                  |lesão tipo flap        |0 (0.0)      |
+|                  |lesão vertical         |1 (4.8)      |
+|                  |normal                 |0 (0.0)      |
+|lca (%)           |não                    |5 (23.8)     |
+|                  |sim                    |16 (76.2)    |
 
 Table: **Tabela 1* Descrição dos pacientes do estudo.
 
