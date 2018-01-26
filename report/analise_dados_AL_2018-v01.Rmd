@@ -47,6 +47,9 @@ kable(history)
 ```
 
 ---
+```{r}
+source("scripts/input.R")
+```
 
 # Lista de abreviaturas
 
@@ -69,7 +72,31 @@ Esta análise foi realizada utilizando-se o software `R` versão `r getRversion(
 
 # Resultados
 
-<!-- # Exceções e Desvios do teste -->
+```{r echo=FALSE}
+library(tableone)
+pander(print(CreateTableOne(c("idade", "genero", "RM", "loc", "da", "lca"),  data = dados), printToggle = F, showAllLevels = T, exact = T, noSpaces = T))
+```
+
+Table: Tabela descritiva
+
+## Diagnósticos por localização do menisco
+
+```{r}
+print(CreateTableOne(c("RM", "da"), "loc", dados), exact = T)
+```
+
+
+## Incidência por gênero
+
+```{r}
+print(CreateTableOne(c("RM", "da"), "genero", dados), exact = T)
+
+```
+
+# Exceções e limitações do estudo
+
+Para uma comparação efetiva entre os métodos de diagnóstico, o ideal seria um estudo prospectivo randomizado, com casos balanceados.
+
 
 # Conclusões
 
