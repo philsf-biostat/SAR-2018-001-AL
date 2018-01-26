@@ -53,7 +53,10 @@ source("scripts/input.R")
 
 # Lista de abreviaturas
 
-- RM - Ressonância magnética
+- IC  - Intervalo de Confiança de 95%
+- LCA - Ligamento Cruzado Anterior
+- OR  - Razão de Chances (*odds ratio*)
+- RM  - Ressonância magnética
 
 # Introdução
 
@@ -100,12 +103,34 @@ A RM foi incapaz de identificar corretamente 2 casos (9.5%).
 
 O diagnóstico confirmatório por artroscopia identificou 9 lesões longitudinais (42.9%), 7 lesões em alça de balde (33.3%), 4 lesões degenerativas (19.0%) e uma lesão vertical (4.8%).
 
-## Diagnósticos por localização do menisco
+<!-- ## Diagnósticos por localização do menisco -->
 
-```{r}
-print(CreateTableOne(c("RM", "da"), "loc", dados), exact = T)
+<!-- ```{r} -->
+<!-- print(CreateTableOne(c("RM", "da"), "loc", dados), exact = T) -->
+<!-- ``` -->
+
+## Associação entre a localização da lesão e LCA
+
+```{r include=FALSE}
+print(CreateTableOne("loc", "lca", dados), exact = T, showAllLevels = T)
 ```
 
+--------------------------------------------------------
+   &nbsp;                  não         sim      p-valor
+------------- --------- ---------- ----------- ---------
+    **n**                   5          16             
+
+ **loc (%)**   lateral   4 (80.0)   3 (18.8)    0.025 
+
+               medial    1 (20.0)   13 (81.2)         
+--------------------------------------------------------
+
+Table: **Tabela 2** Localização da lesão x LCA.
+O p-valor corresponde ao teste exato de Fisher.
+
+As lesões LCA ocorreram em 3 pacientes (18.8) no menisco lateral e em 13 (81.2%) no menisco medial.
+Há uma associação significativa entre a localização da lesão e a lesão associada no LCA (p-valor = 0.025).
+Parece haver evidências de que nas lesões de menisco medial há 14.4 mais chances de estarem associadas a uma lesão no LCA (OR: 14.4, IC=[1.00, 909.70]).
 
 ## Incidência por gênero
 
