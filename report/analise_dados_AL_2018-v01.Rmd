@@ -103,6 +103,14 @@ A RM foi incapaz de identificar corretamente 2 casos (9.5%).
 
 O diagnóstico confirmatório por artroscopia identificou 9 lesões longitudinais (42.9%), 7 lesões em alça de balde (33.3%), 4 lesões degenerativas (19.0%) e uma lesão vertical (4.8%).
 
+## Relação entre o diagnóstico por RM e artroscópico
+
+```{r}
+print(CreateTableOne("RM", "da", dados), exact = T)
+```
+
+Há diferença significativa entre os diagnósticos efetuados por ambos os métodos (Fisher: p-valor = 0.041).
+
 <!-- ## Diagnósticos por localização do menisco -->
 
 <!-- ```{r} -->
