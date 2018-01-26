@@ -23,34 +23,19 @@ subtitle: 'CÓDIGO: analise_dados_AL_2018-v01'
 toc-title: "Sumário"
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-knitr::opts_knit$set(root.dir = normalizePath(".."))
-options(scipen = 999)
-library(pander)
-library(knitr)
-library(philsfmisc)
 
-
-```
 
 ---
 
 **Histórico do documento**
 
-```{r, echo = FALSE}
-Version <- c("01")
-Changes <- c("Versão inicial")
-history <- cbind(Version, Changes)
-colnames(history) <- c("Versão", "Alterações")
-# pander(history, split.cells = 70)
-kable(history)
-```
+
+Versão   Alterações     
+-------  ---------------
+01       Versão inicial 
 
 ---
-```{r}
-source("scripts/input.R")
-```
+
 
 # Lista de abreviaturas
 
@@ -74,18 +59,15 @@ Artoscópico (Longitudinal, Vertical, Alça de Balde, Degenerativa);
 
 As variáveis quantitativas foram descritas como média e desvio-padrão, as qualitativas como frequência e porcentagem.
 As associções entre duas variáveis qualitativas foram avaliadas com o teste exato de Fisher.
-Esta análise foi realizada utilizando-se o software `R` versão `r getRversion()`.
+Esta análise foi realizada utilizando-se o software `R` versão 3.4.3.
 
-<!-- The exact confidence intervals (CIs) of binomial proportions were calculated using package `exactci` (version `r packageVersion("exactci")`). -->
+<!-- The exact confidence intervals (CIs) of binomial proportions were calculated using package `exactci` (version 1.3.3). -->
 
 # Resultados
 
 ## Análise descritiva
 
-```{r include=FALSE}
-library(tableone)
-kable(print(CreateTableOne(c("idade", "genero", "RM", "loc", "da", "lca"),  data = dados), printToggle = F, showAllLevels = T, exact = T, noSpaces = T))
-```
+
 
 |                  |level                  |Overall      |
 |:-----------------|:----------------------|:------------|
@@ -135,14 +117,7 @@ O diagnóstico confirmatório por artroscopia identificou 9 lesões longitudinai
 
 ## Relação entre o diagnóstico por RM e artroscópico
 
-```{r echo=FALSE}
-# RM <- dados$RM
-# da <- dados$da
-# levels(RM) <- levels(da) <- c("lc", "ld", "ab", "lh", "ll", "lf", "lv", "sl")
-# kable(table(RM, da))
-# pander(print(CreateTableOne("RM", "da", dados), exact = T, printToggle = F))
-# source("scripts/input.R")
-```
+
 
 |RM \\ DA| lc| ld| ab| lh| ll| lf| lv| sl|
 |:------:|--:|--:|--:|--:|--:|--:|--:|--:|
@@ -181,9 +156,7 @@ Há diferença significativa entre os diagnósticos efetuados por ambos os méto
 
 ## Associação entre a localização da lesão e LCA
 
-```{r include=FALSE}
-print(CreateTableOne("loc", "lca", dados), exact = T, showAllLevels = T)
-```
+
 
 --------------------------------------------------------
    &nbsp;                  não         sim      p-valor
@@ -204,9 +177,7 @@ Parece haver evidências de que nas lesões de menisco medial há 14 vezes mais 
 
 ## Incidência por gênero
 
-```{r include=FALSE}
-print(CreateTableOne(c("RM", "da"), "genero", dados), exact = T)
-```
+
 
 <!-- Table: **Tabela 3** Incidências das lesões por gênero. -->
 <!-- O p-valor corresponde ao teste exato de Fisher. -->
