@@ -106,8 +106,20 @@ O diagnóstico confirmatório por artroscopia identificou 9 lesões longitudinai
 ## Relação entre o diagnóstico por RM e artroscópico
 
 ```{r echo=FALSE}
-pander(print(CreateTableOne("RM", "da", dados), exact = T, printToggle = F))
+# levels(dados$RM) <- levels(dados$da) <- c("lc", "ld", "ab", "lh", "ll", "lf", "lv", "sl")
+# pander(print(CreateTableOne("RM", "da", dados), exact = T, printToggle = F))
+# source("scripts/input.R")
 ```
+
+Table: **Tabela xx** - Tabela de contingência dos diagnósticos obtidos por RM (linhas) e por Diagnóstico artroscópico (colunas);
+lc = lesão complexa,
+ld = lesão degenerativa,
+ab = lesão em alça de balde,
+lh = lesão horizontal,
+ll = lesão horizontal,
+lf = lesão tipo flap,
+lv = lesão vertical,
+sl = sem lesão.
 
 Há diferença significativa entre os diagnósticos efetuados por ambos os métodos (Fisher: p-valor = 0.041).
 
