@@ -74,12 +74,31 @@ Esta análise foi realizada utilizando-se o software `R` versão `r getRversion(
 
 # Resultados
 
+## Análise descritiva
+
 ```{r echo=FALSE}
 library(tableone)
 pander(print(CreateTableOne(c("idade", "genero", "RM", "loc", "da", "lca"),  data = dados), printToggle = F, showAllLevels = T, exact = T, noSpaces = T))
 ```
 
-Table: Tabela descritiva
+Table: **Tabela 1* Descrição dos pacientes do estudo.
+
+Após a aplicação dos critérios de inclusão e exclusão nos prontuários, 21 pacientes foram incluídos no estudo (tabela 1).
+Destes, 14 (66.7%) eram homens, e 7 (33.4%) mulheres.
+A idade média (DP) dos pacientes foi 29.05 (8.02) anos.
+
+As lesões ocorreram no menisco lateral em 7 casos (33.3%) e em 14 casos no menisco medial (66.7%).
+Foram identificadas lesões associadas ao ligamento em 16 (76.2%) casos.
+
+Os diagnósticos considerados para ambos os momentos (pré e per operatório) identificaram lesões diferentes.
+O diagnóstico artroscópico identificou apenas 4 lesões, enquanto a RM indicou um 8 lesões distintas, além de falhar ao identificar 2 casos em que havia lesão.
+
+O diagnóstico por RM identificou 7 lesões em alça de balde (33.3%), 4 lesões complexas (19.0%) e 4 lesões verticais (19.0%).
+As lesões degenerativa, horizontal, longitudinal e flap foram identificadas em um único caso (4.8%) cada.
+
+A RM foi incapaz de identificar corretamente 2 casos (9.5%).
+
+O diagnóstico confirmatório por artroscopia identificou 9 lesões longitudinais (42.9%), 7 lesões em alça de balde (33.3%), 4 lesões degenerativas (19.0%) e uma lesão vertical (4.8%).
 
 ## Diagnósticos por localização do menisco
 
