@@ -1,7 +1,7 @@
 ---
-title: "Análise Estatística de ..."
-author: '**De:** Felipe Figueiredo **Para:** ___'
-date: '**Data: ** dd/mm/aaaa'
+title: "Análise de dados - Residência em Ortopedia de Alexandre Romano e Leandro Jardim (2018)"
+author: '**De:** Felipe Figueiredo **Para:** Thiago Alberto Vivacqua'
+date: '**Data: ** 26/01/2018'
 output:
   html_document:
     fig_caption: yes
@@ -18,7 +18,7 @@ output:
     fig_width: 6
     reference_docx: misc/style.docx
     toc: yes
-subtitle: 'CÓDIGO: analise_dados_AL_2018'
+subtitle: 'CÓDIGO: analise_dados_AL_2018-v01'
 toc-title: "Sumário"
 ---
 
