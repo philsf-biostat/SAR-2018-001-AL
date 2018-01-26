@@ -81,7 +81,7 @@ Esta análise foi realizada utilizando-se o software `R` versão `r getRversion(
 
 ```{r echo=FALSE}
 library(tableone)
-pander(print(CreateTableOne(c("idade", "genero", "RM", "loc", "da", "lca"),  data = dados), printToggle = F, showAllLevels = T, exact = T, noSpaces = T))
+kable(print(CreateTableOne(c("idade", "genero", "RM", "loc", "da", "lca"),  data = dados), printToggle = F, showAllLevels = T, exact = T, noSpaces = T))
 ```
 
 Table: **Tabela 1* Descrição dos pacientes do estudo.
