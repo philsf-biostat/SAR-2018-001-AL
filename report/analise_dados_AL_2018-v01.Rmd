@@ -105,8 +105,8 @@ O diagnóstico confirmatório por artroscopia identificou 9 lesões longitudinai
 
 ## Relação entre o diagnóstico por RM e artroscópico
 
-```{r}
-print(CreateTableOne("RM", "da", dados), exact = T)
+```{r echo=FALSE}
+pander(print(CreateTableOne("RM", "da", dados), exact = T, printToggle = F))
 ```
 
 Há diferença significativa entre os diagnósticos efetuados por ambos os métodos (Fisher: p-valor = 0.041).
