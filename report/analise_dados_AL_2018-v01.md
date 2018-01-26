@@ -1,0 +1,216 @@
+---
+title: "Análise de dados - Residência em Ortopedia de Alexandre Romano e Leandro Jardim (2018)"
+author: '**De:** Felipe Figueiredo **Para:** Thiago Alberto Vivacqua'
+date: '**Data: ** 26/01/2018'
+output:
+  html_document:
+    fig_caption: yes
+    fig_height: 6
+    fig_width: 6
+    keep_md: yes
+    number_sections: yes
+    toc: yes
+  pdf_document:
+    number_sections: yes
+    toc: yes
+  word_document:
+    fig_caption: yes
+    fig_height: 6
+    fig_width: 6
+    reference_docx: misc/style.docx
+    toc: yes
+subtitle: 'CÓDIGO: analise_dados_AL_2018-v01'
+toc-title: "Sumário"
+---
+
+
+
+---
+
+**Histórico do documento**
+
+
+Versão   Alterações     
+-------  ---------------
+01       Versão inicial 
+
+---
+
+
+# Lista de abreviaturas
+
+- IC  - Intervalo de Confiança de 95%
+- LCA - Ligamento Cruzado Anterior
+- OR  - Razão de Chances (*odds ratio*)
+- RM  - Ressonância magnética
+
+# Introdução
+
+## Objetivos
+
+1. avaliar a associação entre os diagnósticos da RM e o Diagnóstico
+Artoscópico (Longitudinal, Vertical, Alça de Balde, Degenerativa);
+2. avaliar a relação entre a incidência no menisco acometido e a lesão associada (LCA);
+3. identificar a incidência destas lesões de acordo com o gênero do paciente.
+
+## Recepção e tratamento dos dados
+
+# Metodologia
+
+As variáveis quantitativas foram descritas como média e desvio-padrão, as qualitativas como frequência e porcentagem.
+As associções entre duas variáveis qualitativas foram avaliadas com o teste exato de Fisher.
+Esta análise foi realizada utilizando-se o software `R` versão 3.4.3.
+
+<!-- The exact confidence intervals (CIs) of binomial proportions were calculated using package `exactci` (version 1.3.3). -->
+
+# Resultados
+
+## Análise descritiva
+
+
+
+|                  |                       |             |
+|:-----------------:|:----------------------|:------------|
+|N                 |                       |21           |
+|Idade (média (DP))|                       |29.05 (8.02) |
+|Gênero (%)        |f                      |7 (33.3)     |
+|                  |m                      |14 (66.7)    |
+|RM (%)            |lesão complexa         |4 (19.0)     |
+|                  |lesão degenerativa     |1 (4.8)      |
+|                  |lesão em alça de balde |7 (33.3)     |
+|                  |lesão horizontal       |1 (4.8)      |
+|                  |lesão longitudinal     |1 (4.8)      |
+|                  |lesão tipo flap        |1 (4.8)      |
+|                  |lesão vertical         |4 (19.0)     |
+|                  |normal                 |2 (9.5)      |
+|Localização (%)   |lateral                |7 (33.3)     |
+|                  |medial                 |14 (66.7)    |
+|Diag. Artrosc. (%)|lesão complexa         |0 (0.0)      |
+|                  |lesão degenerativa     |4 (19.0)     |
+|                  |lesão em alça de balde |7 (33.3)     |
+|                  |lesão horizontal       |0 (0.0)      |
+|                  |lesão longitudinal     |9 (42.9)     |
+|                  |lesão tipo flap        |0 (0.0)      |
+|                  |lesão vertical         |1 (4.8)      |
+|                  |normal                 |0 (0.0)      |
+|LCA (%)           |não                    |5 (23.8)     |
+|                  |sim                    |16 (76.2)    |
+
+Table: **Tabela 1** Descrição dos pacientes do estudo.
+
+Após a aplicação dos critérios de inclusão e exclusão nos prontuários, 21 pacientes foram incluídos no estudo (tabela 1).
+Destes, 14 (66.7%) eram homens, e 7 (33.4%) mulheres.
+A idade média (DP) dos pacientes foi 29.05 (8.02) anos.
+
+As lesões ocorreram no menisco lateral em 7 casos (33.3%) e em 14 casos no menisco medial (66.7%).
+Foram identificadas lesões associadas ao ligamento em 16 (76.2%) casos.
+
+Os diagnósticos considerados para ambos os momentos (pré e per operatório) identificaram lesões diferentes.
+O diagnóstico artroscópico identificou apenas 4 lesões, enquanto a RM indicou um 8 lesões distintas, além de falhar ao identificar 2 casos em que havia lesão.
+
+O diagnóstico por RM identificou 7 lesões em alça de balde (33.3%), 4 lesões complexas (19.0%) e 4 lesões verticais (19.0%).
+As lesões degenerativa, horizontal, longitudinal e flap foram identificadas em um único caso (4.8%) cada.
+
+A RM foi incapaz de identificar corretamente 2 casos (9.5%).
+
+O diagnóstico confirmatório por artroscopia identificou 9 lesões longitudinais (42.9%), 7 lesões em alça de balde (33.3%), 4 lesões degenerativas (19.0%) e uma lesão vertical (4.8%).
+
+## Relação entre o diagnóstico por RM e artroscópico
+
+
+
+|RM \\ DA| lc| ld| ab| lh| ll| lf| lv| sl|
+|:------:|--:|--:|--:|--:|--:|--:|--:|--:|
+|  lc   |  0|  2|  0|  0|  2|  0|  0|  0|
+|  ld   |  0|  0|  0|  0|  0|  0|  1|  0|
+|  ab   |  0|  0|  5|  0|  2|  0|  0|  0|
+|  lh   |  0|  1|  0|  0|  0|  0|  0|  0|
+|  ll   |  0|  0|  0|  0|  1|  0|  0|  0|
+|  lf   |  0|  0|  0|  0|  1|  0|  0|  0|
+|  lv   |  0|  1|  2|  0|  1|  0|  0|  0|
+|  sl   |  0|  0|  0|  0|  2|  0|  0|  0|
+
+Table: **Tabela 2** - Tabela de contingência dos diagnósticos obtidos por RM (linhas) e por Diagnóstico artroscópico (colunas);
+DA = diagnóstico artroscópico,
+lc = lesão complexa,
+ld = lesão degenerativa,
+ab = lesão em alça de balde,
+lh = lesão horizontal,
+ll = lesão longitudinal,
+lf = lesão tipo flap,
+lv = lesão vertical,
+sl = sem lesão.
+O p-valor corresponde ao teste exato de Fisher.
+
+A tabela 2 mostra as contagens pareadas em ambos os diagnósticos.
+A RM apresentou sucesso no diagnóstico de 5 lesões em alça de balde e uma lesão longitudinal.
+Apresentou erros de diagnóstico em um total de 13 classificadas erroneamente, e 2 lesões classificadas como ausentes (falso negativo). 
+
+Há diferença significativa entre os diagnósticos efetuados por ambos os métodos (Fisher: p-valor = 0.041).
+
+<!-- ## Diagnósticos por localização do menisco -->
+
+<!-- ```{r} -->
+<!-- print(CreateTableOne(c("RM", "da"), "loc", dados), exact = T) -->
+<!-- ``` -->
+
+## Associação entre a localização da lesão e LCA
+
+
+
+--------------------------------------------------------
+   &nbsp;                  não         sim      p-valor
+------------- --------- ---------- ----------- ---------
+    **n**                   5          16             
+
+ **loc (%)**   lateral   4 (80.0)   3 (18.8)    0.025 
+
+               medial    1 (20.0)   13 (81.2)         
+--------------------------------------------------------
+
+Table: **Tabela 3** Localização da lesão x LCA.
+O p-valor corresponde ao teste exato de Fisher.
+
+As lesões LCA ocorreram em 3 pacientes (18.8) no menisco lateral e em 13 (81.2%) no menisco medial (tabela 3).
+Há uma associação significativa entre a localização da lesão e a lesão associada no LCA (p-valor = 0.025).
+Parece haver evidências de que nas lesões de menisco medial há 14 vezes mais chances de estarem associadas a uma lesão no LCA (OR: 14.39, IC=[1.00, 909.70]).
+
+## Incidência por gênero
+
+
+
+<!-- Table: **Tabela 3** Incidências das lesões por gênero. -->
+<!-- O p-valor corresponde ao teste exato de Fisher. -->
+
+Os diagnósticos pré e per operatórios tiveram suas incidências estratificadas por gênero dos pacientes levantados.
+
+De acordo com a RM, os diagnósticos mais frequentes nos 14 pacientes homens foram a lesão complexa e a lesão em alça balde, ambos ocorrendo em 4 pacientes (28.6%).
+A lesão vertical ocorreu em 2 homens (14.3%) e as lesões degenerativa, horizontal e flap ocorreram em 1 (7.1%) paciente, cada.
+Considerando as 7 mulheres incluídas no estudo, o diagnóstico mais frequente pela RM foi a lesão em alça de balde em 3 pacientes (42.9%) e a lesão longitudinal foi percebida em uma paciente (14.3%).
+Em cada um dos gêneros ocorreu um falso negativo, isto é, casos em que a RM não foi capaz de identificar nenhuma lesão.
+
+Quando foi feito o diagnóstico artroscópico, a lesão identificada com maior frequência em homens foi a longitudinal, em 5 casos (35.7).
+As lesões degenerativa e alça de balde foram diagnosticadas em 4 casos cada (28.6%) e uma lesão vertical (7.1%).
+Nas mulheres a lesão com maior incidência foi a longitudinal (4 casos, 57.1%), seguida da alça de balde (3 casos, 42.9%).
+
+Não houve diferença significativa nas distribuições dos possíveis diagnósticos em relação aos gêneros, tanto no caso da RM (p-valor = 0.536), como do diagnóstico artroscópico (p-valor = 0.420).
+Isto indica que as lesões parecem ter incidências semelhantes em ambos os gêneros.
+
+# Exceções e limitações do estudo
+
+Este estudo não contemplou casos positivos e negativos, para o desafio a RM como método diagnóstico.
+Assim, não é possível determinar a sua sensibilidade, especificidade, acurácia e outros parâmtros relevantes.
+Para uma comparação efetiva entre os métodos de diagnóstico, o ideal seria um estudo prospectivo randomizado e controlado, com casos balanceados positivos e negativos para os diversos tipos de lesão.
+
+# Conclusões
+
+1. A RM apresentou sucesso parcial em identificar lesões no pré-operatório, porém na amostra deste estudo esta induziu erros de diagnóstico, incluindo falsos negativos;
+1. As lesões no menisco medial estão significativamente associadas a um aumento na chance de ocorrência de LCA;
+1. As lesões não parecem apresentar incidências diferenciadas por gênero;
+
+# Referências
+
+# Apêndice
+
+
+Table: Dados brutos recebidos pelo solicitante.
