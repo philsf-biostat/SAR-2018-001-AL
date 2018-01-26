@@ -212,3 +212,5 @@ Para uma comparação efetiva entre os métodos de diagnóstico, o ideal seria u
 
 # Apêndice
 
+
+Table: Dados brutos recebidos pelo solicitante.

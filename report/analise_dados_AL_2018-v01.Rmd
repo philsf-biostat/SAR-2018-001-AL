@@ -241,3 +241,8 @@ Para uma comparação efetiva entre os métodos de diagnóstico, o ideal seria u
 
 # Apêndice
 
+```{r dados recebidos, include=FALSE}
+kable(dados)
+```
+
+Table: Dados brutos recebidos pelo solicitante.
