@@ -90,10 +90,12 @@ print(CreateTableOne(c("RM", "da"), "loc", dados), exact = T)
 
 ## Incidência por gênero
 
-```{r}
+```{r include=FALSE}
 print(CreateTableOne(c("RM", "da"), "genero", dados), exact = T)
-
 ```
+
+<!-- Table: **Tabela 3** Incidências das lesões por gênero. -->
+<!-- O p-valor corresponde ao teste exato de Fisher. -->
 
 Os diagnósticos pré e per operatórios tiveram suas incidências estratificadas por gênero dos pacientes levantados.
 
