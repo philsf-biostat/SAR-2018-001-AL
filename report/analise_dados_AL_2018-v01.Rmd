@@ -53,6 +53,8 @@ source("scripts/input.R")
 
 # Lista de abreviaturas
 
+- RM - Ressonância magnética
+
 # Introdução
 
 ## Objetivos
@@ -88,10 +90,26 @@ print(CreateTableOne(c("RM", "da"), "loc", dados), exact = T)
 
 ## Incidência por gênero
 
-```{r}
+```{r include=FALSE}
 print(CreateTableOne(c("RM", "da"), "genero", dados), exact = T)
-
 ```
+
+<!-- Table: **Tabela 3** Incidências das lesões por gênero. -->
+<!-- O p-valor corresponde ao teste exato de Fisher. -->
+
+Os diagnósticos pré e per operatórios tiveram suas incidências estratificadas por gênero dos pacientes levantados.
+
+De acordo com a RM, os diagnósticos mais frequentes nos 14 pacientes homens foram a lesão complexa e a lesão em alça balde, ambos ocorrendo em 4 pacientes (28.6%).
+A lesão vertical ocorreu em 2 homens (14.3%) e as lesões degenerativa, horizontal e flap ocorreram em 1 (7.1%) paciente, cada.
+Considerando as 7 mulheres incluídas no estudo, o diagnóstico mais frequente pela RM foi a lesão em alça de balde em 3 pacientes (42.9%) e a lesão longitudinal foi percebida em uma paciente (14.3%).
+Em cada um dos gêneros ocorreu um falso negativo, isto é, casos em que a RM não foi capaz de identificar nenhuma lesão.
+
+Quando foi feito o diagnóstico artroscópico, a lesão identificada com maior frequência em homens foi a longitudinal, em 5 casos (35.7).
+As lesões degenerativa e alça de balde foram diagnosticadas em 4 casos cada (28.6%) e uma lesão vertical (7.1%).
+Nas mulheres a lesão com maior incidência foi a longitudinal (4 casos, 57.1%), seguida da alça de balde (3 casos, 42.9%).
+
+Não houve diferença significativa nas distribuições dos possíveis diagnósticos em relação aos gêneros, tanto no caso da RM (p-valor = 0.536), como do diagnóstico artroscópico (p-valor = 0.420).
+Isto indica que as lesões parecem ter incidências semelhantes em ambos os gêneros.
 
 # Exceções e limitações do estudo
 
