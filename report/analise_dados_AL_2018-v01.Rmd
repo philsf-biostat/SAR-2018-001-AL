@@ -71,6 +71,8 @@ Artoscópico (Longitudinal, Vertical, Alça de Balde, Degenerativa);
 
 # Metodologia
 
+As variáveis quantitativas foram descritas como média e desvio-padrão, as qualitativas como frequência e porcentagem.
+As associções entre duas variáveis qualitativas foram avaliadas com o teste exato de Fisher.
 Esta análise foi realizada utilizando-se o software `R` versão `r getRversion()`.
 
 <!-- The exact confidence intervals (CIs) of binomial proportions were calculated using package `exactci` (version `r packageVersion("exactci")`). -->
