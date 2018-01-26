@@ -69,11 +69,11 @@ Esta análise foi realizada utilizando-se o software `R` versão 3.4.3.
 
 
 
-|                  |level                  |Overall      |
-|:-----------------|:----------------------|:------------|
-|n                 |                       |21           |
-|idade (mean (sd)) |                       |29.05 (8.02) |
-|genero (%)        |f                      |7 (33.3)     |
+|                  |                       |             |
+|:-----------------:|:----------------------|:------------|
+|N                 |                       |21           |
+|Idade (média (DP))|                       |29.05 (8.02) |
+|Gênero (%)        |f                      |7 (33.3)     |
 |                  |m                      |14 (66.7)    |
 |RM (%)            |lesão complexa         |4 (19.0)     |
 |                  |lesão degenerativa     |1 (4.8)      |
@@ -83,9 +83,9 @@ Esta análise foi realizada utilizando-se o software `R` versão 3.4.3.
 |                  |lesão tipo flap        |1 (4.8)      |
 |                  |lesão vertical         |4 (19.0)     |
 |                  |normal                 |2 (9.5)      |
-|loc (%)           |lateral                |7 (33.3)     |
+|Localização (%)   |lateral                |7 (33.3)     |
 |                  |medial                 |14 (66.7)    |
-|da (%)            |lesão complexa         |0 (0.0)      |
+|Diag. Artrosc. (%)|lesão complexa         |0 (0.0)      |
 |                  |lesão degenerativa     |4 (19.0)     |
 |                  |lesão em alça de balde |7 (33.3)     |
 |                  |lesão horizontal       |0 (0.0)      |
@@ -93,10 +93,10 @@ Esta análise foi realizada utilizando-se o software `R` versão 3.4.3.
 |                  |lesão tipo flap        |0 (0.0)      |
 |                  |lesão vertical         |1 (4.8)      |
 |                  |normal                 |0 (0.0)      |
-|lca (%)           |não                    |5 (23.8)     |
+|LCA (%)           |não                    |5 (23.8)     |
 |                  |sim                    |16 (76.2)    |
 
-Table: **Tabela 1* Descrição dos pacientes do estudo.
+Table: **Tabela 1** Descrição dos pacientes do estudo.
 
 Após a aplicação dos critérios de inclusão e exclusão nos prontuários, 21 pacientes foram incluídos no estudo (tabela 1).
 Destes, 14 (66.7%) eram homens, e 7 (33.4%) mulheres.
@@ -198,13 +198,19 @@ Isto indica que as lesões parecem ter incidências semelhantes em ambos os gên
 
 # Exceções e limitações do estudo
 
-Para uma comparação efetiva entre os métodos de diagnóstico, o ideal seria um estudo prospectivo randomizado, com casos balanceados.
-
+Este estudo não contemplou casos positivos e negativos, para o desafio a RM como método diagnóstico.
+Assim, não é possível determinar a sua sensibilidade, especificidade, acurácia e outros parâmtros relevantes.
+Para uma comparação efetiva entre os métodos de diagnóstico, o ideal seria um estudo prospectivo randomizado e controlado, com casos balanceados positivos e negativos para os diversos tipos de lesão.
 
 # Conclusões
 
+1. A RM apresentou sucesso parcial em identificar lesões no pré-operatório, porém na amostra deste estudo esta induziu erros de diagnóstico, incluindo falsos negativos;
+1. As lesões no menisco medial estão significativamente associadas a um aumento na chance de ocorrência de LCA;
+1. As lesões não parecem apresentar incidências diferenciadas por gênero;
 
 # Referências
 
 # Apêndice
 
+
+Table: Dados brutos recebidos pelo solicitante.
