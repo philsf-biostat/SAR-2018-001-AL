@@ -47,6 +47,9 @@ kable(history)
 ```
 
 ---
+```{r}
+source("scripts/input.R")
+```
 
 # Lista de abreviaturas
 
