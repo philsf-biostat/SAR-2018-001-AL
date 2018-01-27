@@ -143,8 +143,10 @@ sl = sem lesão.
 O p-valor corresponde ao teste exato de Fisher.
 
 A tabela 2 mostra as contagens pareadas em ambos os diagnósticos.
-A RM apresentou sucesso no diagnóstico de 5 lesões em alça de balde e uma lesão longitudinal.
+A RM apresentou sucesso no diagnóstico de 6 lesões em alça de balde e uma lesão longitudinal.
 Apresentou erros de diagnóstico em um total de 13 classificadas erroneamente, e 2 lesões classificadas como ausentes (falso negativo). 
+
+A taxa de acerto da RM na amostra deste estudo foi de 28.6% (IC [11.3, 52.2]%) das lesões corretamente classificadas.
 
 Há diferença significativa entre os diagnósticos efetuados por ambos os métodos (Fisher: p-valor = 0.041).
 
@@ -211,6 +213,7 @@ Para uma comparação efetiva entre os métodos de diagnóstico, o ideal seria u
 # Referências
 
 # Apêndice
+
 
 
 Table: Dados brutos recebidos pelo solicitante.
