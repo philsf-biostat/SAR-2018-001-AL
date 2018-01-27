@@ -162,15 +162,11 @@ Há diferença significativa entre os diagnósticos efetuados por ambos os méto
 
 
 
---------------------------------------------------------
-   &nbsp;                  não         sim      p-valor
-------------- --------- ---------- ----------- ---------
-    **n**                   5          16             
-
- **loc (%)**   lateral   4 (80.0)   3 (18.8)    0.025 
-
-               medial    1 (20.0)   13 (81.2)         
---------------------------------------------------------
+|                |        |Sem LCA  |Com LCA   |p     |
+|:---------------|:-------|:--------|:---------|:-----|
+|N               |        |5        |16        |      |
+|Localização (%) |lateral |4 (80.0) |3 (18.8)  |0.025 |
+|                |medial  |1 (20.0) |13 (81.2) |      |
 
 Table: **Tabela 3** Localização da lesão x LCA.
 O p-valor corresponde ao teste exato de Fisher.
