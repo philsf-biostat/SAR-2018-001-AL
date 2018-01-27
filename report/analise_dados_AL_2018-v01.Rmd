@@ -136,10 +136,17 @@ O diagnóstico confirmatório por artroscopia identificou 9 lesões longitudinai
 ## Relação entre o diagnóstico por RM e artroscópico
 
 ```{r echo=FALSE}
-# RM <- dados$RM
-# da <- dados$da
-# levels(RM) <- levels(da) <- c("lc", "ld", "ab", "lh", "ll", "lf", "lv", "sl")
-# kable(table(RM, da))
+RM <- dados$RM
+da <- dados$da
+levels(RM) <- levels(da) <- c("lc", "ld", "ab", "lh", "ll", "lf", "lv", "sl")
+RM.DA <- table(RM, da)
+conc <- sum(diag(RM.DA))
+tot <- sum(RM.DA)
+disc <- tot - conc
+est <- binom.test(conc, tot)$estimate*100
+ic <- binom.test(conc, tot)$conf.int*100
+# kable(RM.DA)
+
 # pander(print(CreateTableOne("RM", "da", dados), exact = T, printToggle = F))
 # source("scripts/input.R")
 ```
@@ -168,8 +175,12 @@ sl = sem lesão.
 O p-valor corresponde ao teste exato de Fisher.
 
 A tabela 2 mostra as contagens pareadas em ambos os diagnósticos.
-A RM apresentou sucesso no diagnóstico de 5 lesões em alça de balde e uma lesão longitudinal.
-Apresentou erros de diagnóstico em um total de 13 classificadas erroneamente, e 2 lesões classificadas como ausentes (falso negativo). 
+A RM apresentou sucesso no diagnóstico de `r conc ` lesões em alça de balde e uma lesão longitudinal.
+Apresentou erros de diagnóstico em um total de `r disc` classificadas erroneamente.
+Das lesões com erro de classificação, 2 foram classificadas como ausentes (falso negativo). 
+
+A taxa de acerto da RM na amostra deste estudo foi de `r format.float(est, 1)`% (IC `r format.interval(ic, 1)`%) das lesões corretamente classificadas.
+Isto significa que, mesmo considerando todas as fontes de variabilidade envolvidas, a estimativa está significativamente abaixo de 50% de acerto.
 
 Há diferença significativa entre os diagnósticos efetuados por ambos os métodos (Fisher: p-valor = 0.041).
 
@@ -233,7 +244,7 @@ Para uma comparação efetiva entre os métodos de diagnóstico, o ideal seria u
 
 # Conclusões
 
-1. A RM apresentou sucesso parcial em identificar lesões no pré-operatório, porém na amostra deste estudo esta induziu erros de diagnóstico, incluindo falsos negativos;
+1. A RM apresentou `r format.float(est, 0)`% de acerto ao identificar lesões no pré-operatório, e esta taxa é significativamente menor que 50%.
 1. As lesões no menisco medial estão significativamente associadas a um aumento na chance de ocorrência de LCA;
 1. As lesões não parecem apresentar incidências diferenciadas por gênero;
 

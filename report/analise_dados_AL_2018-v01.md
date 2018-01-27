@@ -143,8 +143,12 @@ sl = sem lesão.
 O p-valor corresponde ao teste exato de Fisher.
 
 A tabela 2 mostra as contagens pareadas em ambos os diagnósticos.
-A RM apresentou sucesso no diagnóstico de 5 lesões em alça de balde e uma lesão longitudinal.
-Apresentou erros de diagnóstico em um total de 13 classificadas erroneamente, e 2 lesões classificadas como ausentes (falso negativo). 
+A RM apresentou sucesso no diagnóstico de 6 lesões em alça de balde e uma lesão longitudinal.
+Apresentou erros de diagnóstico em um total de 15 classificadas erroneamente.
+Das lesões com erro de classificação, 2 foram classificadas como ausentes (falso negativo). 
+
+A taxa de acerto da RM na amostra deste estudo foi de 28.6% (IC [11.3, 52.2]%) das lesões corretamente classificadas.
+Isto significa que, mesmo considerando todas as fontes de variabilidade envolvidas, a estimativa está significativamente abaixo de 50% de acerto.
 
 Há diferença significativa entre os diagnósticos efetuados por ambos os métodos (Fisher: p-valor = 0.041).
 
@@ -204,13 +208,14 @@ Para uma comparação efetiva entre os métodos de diagnóstico, o ideal seria u
 
 # Conclusões
 
-1. A RM apresentou sucesso parcial em identificar lesões no pré-operatório, porém na amostra deste estudo esta induziu erros de diagnóstico, incluindo falsos negativos;
+1. A RM apresentou 29% de acerto ao identificar lesões no pré-operatório, e esta taxa é significativamente menor que 50%.
 1. As lesões no menisco medial estão significativamente associadas a um aumento na chance de ocorrência de LCA;
 1. As lesões não parecem apresentar incidências diferenciadas por gênero;
 
 # Referências
 
 # Apêndice
+
 
 
 Table: Dados brutos recebidos pelo solicitante.
