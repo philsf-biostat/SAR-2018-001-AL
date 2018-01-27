@@ -18,4 +18,4 @@ Relatório (v01)
   - [Download][]
 
 [Visualização]: report/analise_dados_AL_2018-v01.md
-[Download]: report/analise_dados_AL_2018-v01.docx
+[Download]: report/analise_dados_AL_2018-v01.docx?raw=true
