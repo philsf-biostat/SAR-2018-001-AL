@@ -136,10 +136,17 @@ O diagnóstico confirmatório por artroscopia identificou 9 lesões longitudinai
 ## Relação entre o diagnóstico por RM e artroscópico
 
 ```{r echo=FALSE}
-# RM <- dados$RM
-# da <- dados$da
-# levels(RM) <- levels(da) <- c("lc", "ld", "ab", "lh", "ll", "lf", "lv", "sl")
-# kable(table(RM, da))
+RM <- dados$RM
+da <- dados$da
+levels(RM) <- levels(da) <- c("lc", "ld", "ab", "lh", "ll", "lf", "lv", "sl")
+RM.DA <- table(RM, da)
+conc <- sum(diag(RM.DA))
+tot <- sum(RM.DA)
+disc <- tot - conc
+est <- binom.test(conc, tot)$estimate*100
+ic <- binom.test(conc, tot)$conf.int*100
+# kable(RM.DA)
+
 # pander(print(CreateTableOne("RM", "da", dados), exact = T, printToggle = F))
 # source("scripts/input.R")
 ```
