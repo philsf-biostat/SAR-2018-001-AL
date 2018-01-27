@@ -10,3 +10,12 @@ Perguntas a serem respondidas (objetivos específicos):
 Artoscópico (Longitudinal, Vertical, Alça de Balde, Degenerativa);
 2. avaliar a relação entre a incidência no menisco acometido e a lesão associada (LCA);
 3. identificar a incidência destas lesões de acordo com o gênero do paciente.
+
+## Relatório
+
+Relatório (v01)
+  - [Visualização][]
+  - [Download][]
+
+[Visualização]: report/analise_dados_AL_2018-v01.md
+[Download]: report/analise_dados_AL_2018-v01.docx
