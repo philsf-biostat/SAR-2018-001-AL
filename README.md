@@ -11,6 +11,9 @@ Artoscópico (Longitudinal, Vertical, Alça de Balde, Degenerativa);
 2. avaliar a relação entre a incidência no menisco acometido e a lesão associada (LCA);
 3. identificar a incidência destas lesões de acordo com o gênero do paciente.
 
+## Descrição dos dados
+
+
 ## Relatório
 
 Relatório (v01)
