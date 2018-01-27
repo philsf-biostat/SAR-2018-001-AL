@@ -208,7 +208,7 @@ Para uma comparação efetiva entre os métodos de diagnóstico, o ideal seria u
 
 # Conclusões
 
-1. A RM apresentou sucesso parcial em identificar lesões no pré-operatório, porém na amostra deste estudo esta induziu erros de diagnóstico, incluindo falsos negativos;
+1. A RM apresentou 29% de acerto ao identificar lesões no pré-operatório, e esta taxa é significativamente menor que 50%.
 1. As lesões no menisco medial estão significativamente associadas a um aumento na chance de ocorrência de LCA;
 1. As lesões não parecem apresentar incidências diferenciadas por gênero;
 
