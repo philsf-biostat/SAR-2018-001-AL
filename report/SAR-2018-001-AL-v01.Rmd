@@ -203,7 +203,7 @@ Há diferença significativa entre os diagnósticos efetuados por ambos os méto
 Table: **Tabela 3** Localização da lesão x LCA.
 O p-valor corresponde ao teste exato de Fisher.
 
-As lesões LCA ocorreram em 3 pacientes (18.8) no menisco lateral e em 13 (81.2%) no menisco medial (tabela 3).
+As lesões LCA ocorreram em 3 pacientes (18.8%) no menisco lateral e em 13 (81.2%) no menisco medial (tabela 3).
 Há uma associação significativa entre a localização da lesão e a lesão associada no LCA (p-valor = 0.025).
 Parece haver evidências de que nas lesões de menisco medial há 14 vezes mais chances de estarem associadas a uma lesão no LCA (OR: 14.39, IC=[1.00, 909.70]).
 
