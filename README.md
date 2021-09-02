@@ -5,7 +5,7 @@
 <!-- - v02: substituir ppp01/ppp02 pelo projeto -->
 <!-- - Remover esse bloco -->
 
-# título
+# Avaliação do diagnóstico por RM comparada à artroscopia em lesões de menisco
 
 Objetivos
 

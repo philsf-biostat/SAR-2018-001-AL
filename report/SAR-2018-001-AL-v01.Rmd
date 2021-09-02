@@ -1,5 +1,5 @@
 ---
-title: "Análise de dados - Residência em Ortopedia de Alexandre Romano e Leandro Jardim (2018)"
+title: "Avaliação do diagnóstico por RM comparada à artroscopia em lesões de menisco"
 subtitle: 'DOCUMENTO: SAR-2018-001-AL-v01'
 author: '**De:** Felipe Figueiredo **Para:** Thiago Alberto Vivacqua'
 date: '**Data: ** 26/01/2018'
